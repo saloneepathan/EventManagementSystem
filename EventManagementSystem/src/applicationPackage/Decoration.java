@@ -1,4 +1,4 @@
-package applicationPackage;
+ package applicationPackage;
 
 public class Decoration {
 	
