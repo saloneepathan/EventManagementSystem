@@ -1,5 +1,6 @@
 package applicationPackage;
 
-public class Snacks {
+public class Snacks 
+{
 
 }
