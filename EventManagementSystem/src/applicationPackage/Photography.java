@@ -4,15 +4,15 @@ public class Photography
 {
 	Photography(String eventType, String packageType)
 	{
-		if(packageType == "Silver")
+		if(packageType.equalsIgnoreCase("Silver"))
 		{
 			Silver(eventType);
 		}
-		else if(packageType == "Gold")
+		else if(packageType.equalsIgnoreCase("Gold"))
 		{
 			Gold(eventType);
 		}
-		else if(packageType == "Platinum")
+		else if(packageType.equalsIgnoreCase("Platinum"))
 		{
 			Platinum(eventType);
 		}
