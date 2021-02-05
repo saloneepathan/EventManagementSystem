@@ -8,7 +8,7 @@ public class Meal {
 			System.out.println("________________________________________________________________________________________________________________________________");
 			System.out.println("\nMeal:");
 			System.out.println("Your package includes the following dinner/ lunch menu : ");
-			System.out.println("Puri, Roti, Gulab Jamun, Jalebi, Dal, Jeera Rice, Fryums, 3 types of Chutnies, Pickle, Butter Paneer, Mix Vegies, Palak bhaji, ");
+			System.out.println("Puri, Roti, Gulab Jamun, Jalebi, Dal, Jeera Rice, Fryums, 3 types of Chutnies, Pickle, Butter Paneer, Mix Vegies, Palak bhaji.");
 			System.out.println("________________________________________________________________________________________________________________________________");
 	
 		}

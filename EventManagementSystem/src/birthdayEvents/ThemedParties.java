@@ -1,4 +1,4 @@
-package socialEvents;
+package birthdayEvents;
 
 import applicationPackage.Decoration;
 import applicationPackage.Games;
@@ -6,14 +6,14 @@ import applicationPackage.Host;
 import applicationPackage.Meal;
 import applicationPackage.Photography;
 
-public class HouseWarming 
+public class ThemedParties 
 {
-	public HouseWarming(String packageType)
+	public ThemedParties(String packageType)
 	{
-		new Decoration("Social", packageType);
+		new Decoration("Birthday", packageType);
 		new Meal(packageType);
 		new Games(packageType);
 		new Host();
-		new Photography("Social",packageType);
+		new Photography("Birthday",packageType);
 	}
 }

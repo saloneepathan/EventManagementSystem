@@ -1,15 +1,12 @@
 package weddingEvents;
 
-import applicationPackage.Games;
-import applicationPackage.Host;
-import applicationPackage.Meal;
-import applicationPackage.Photography;
-import applicationPackage.Videography;
+import applicationPackage.*;
 
 public class Reception 
 {
 	public Reception(String packageType)
 	{
+		new Decoration("wedding", packageType);
 		new Meal(packageType);
 		new Games(packageType);
 		new Host();
