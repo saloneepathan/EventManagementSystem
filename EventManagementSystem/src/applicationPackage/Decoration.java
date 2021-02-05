@@ -21,7 +21,7 @@ public class Decoration {
 	public static void Silver(String eventType) 
 	{
 		System.out.println("________________________________________________________________________________________________________________________________");
-		System.out.println("\nDecoration:");
+		System.out.println("\nDECORATION:");
 		switch(eventType) 
 		{
 			case "Corporate":
@@ -45,7 +45,7 @@ public class Decoration {
 	public static void Gold(String eventType) 
 	{
 		System.out.println("________________________________________________________________________________________________________________________________");
-		System.out.println("\nDecoration:");
+		System.out.println("\nDECORATION:");
 		switch(eventType) 
 		{
 			case "Corporate":
@@ -69,7 +69,7 @@ public class Decoration {
 	public static void Platinum(String eventType) 
 	{
 		System.out.println("________________________________________________________________________________________________________________________________");
-		System.out.println("\nDecoration:");
+		System.out.println("\nDECORATION:");
 		switch(eventType) 
 		{
 			case "Corporate":

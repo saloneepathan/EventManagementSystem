@@ -5,6 +5,8 @@ import applicationPackage.Games;
 import applicationPackage.Host;
 import applicationPackage.Meal;
 import applicationPackage.Photography;
+import applicationPackage.Snacks;
+import applicationPackage.SoftDrinks;
 
 public class Seminars 
 {
@@ -12,6 +14,8 @@ public class Seminars
 	{
 		new Decoration("Corporate", packageType);
 		new Meal(packageType);
+		new Snacks("Corporate", packageType);
+		new SoftDrinks("Corporate", packageType);
 		new Games(packageType);
 		new Host();
 		new Photography("Corporate",packageType);
