@@ -2,7 +2,7 @@ package applicationPackage;
 
 public class Photography 
 {
-	Photography(String eventType, String packageType)
+	public Photography(String eventType, String packageType)
 	{
 		if(packageType.equalsIgnoreCase("Silver"))
 		{
@@ -22,19 +22,24 @@ public class Photography
 		switch(eventType) 
 		{
 			case "corporate":
-				System.out.println("Photos: You will get 50 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 50 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "wedding":
-				System.out.println("Photos: You will get 200 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 200 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "social":
-				System.out.println("Photos: You will get 50 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 50 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "kids":
-				System.out.println("Photos: You will get 50 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 50 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "birthday":
-				System.out.println("Photos: You will get 50 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 50 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 		}
 	}
@@ -43,19 +48,24 @@ public class Photography
 		switch(eventType) 
 		{
 			case "corporate":
-				System.out.println("Photos: You will get 100 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 100 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "wedding":
-				System.out.println("Photos: You will get 250 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 250 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "social":
-				System.out.println("Photos: You will get 100 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 100 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "kids":
-				System.out.println("Photos: You will get 100 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 100 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "birthday":
-				System.out.println("Photos: You will get 100 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 100 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 		}
 	}
@@ -64,19 +74,24 @@ public class Photography
 		switch(eventType) 
 		{
 			case "corporate":
-				System.out.println("Photos: You will get 200 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 200 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "wedding":
-				System.out.println("Photos: You will get 500 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 500 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "social":
-				System.out.println("Photos: You will get 300 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 300 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "kids":
-				System.out.println("Photos: You will get 500 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 500 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 			case "birthday":
-				System.out.println("Photos: You will get 500 photo copies of the event.");
+				System.out.println("\nPhotos: You will get 500 photo copies of the event.");
+				System.out.println("________________________________________________________________________________________________________________________________");
 				break;
 		}
 	}

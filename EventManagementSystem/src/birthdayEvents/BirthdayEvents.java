@@ -1,5 +1,6 @@
 package birthdayEvents;
 
-public class BirthdayEvents {
-
+public class BirthdayEvents 
+{
+	
 }
