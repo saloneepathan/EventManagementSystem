@@ -85,28 +85,57 @@ public class Home extends JFrame implements ActionListener{
 		JButton corporate=new JButton("Corporate Events");
 		corporate.setBounds(200,300,200,30);
 		pnl.add(corporate);
-		corporate.addActionListener(this);
+		corporate.addActionListener(new ActionListener(){  
+			public void actionPerformed(ActionEvent e){  
+				pnl.setVisible(false);
+	            Corporate c=new Corporate();
+				c.setVisible(true);  
+        	}  
+    	});
 		
 		JButton birthday=new JButton("Birthday Events");
 		birthday.setBounds(500,300,250,30);
 		pnl.add(birthday);
-		birthday.addActionListener(this);
+		birthday.addActionListener(new ActionListener(){  
+			public void actionPerformed(ActionEvent e){  
+				pnl.setVisible(false);
+	            Birthday b=new Birthday();
+				b.setVisible(true);  
+        	}  
+    	});
 
 		JButton kids=new JButton("Kids Events");
 		kids.setBounds(800,300,250,30);
 		pnl.add(kids);
-		kids.addActionListener(this);
+		kids.addActionListener(new ActionListener(){  
+			public void actionPerformed(ActionEvent e){  
+				pnl.setVisible(false);
+	            Kids k=new Kids();
+				k.setVisible(true);  
+        	}  
+    	});
 
 		JButton social=new JButton("Social Events");
 		social.setBounds(300,400,250,30);
 		pnl.add(social);
-		social.addActionListener(this);
+		social.addActionListener(new ActionListener(){  
+			public void actionPerformed(ActionEvent e){  
+				pnl.setVisible(false);
+	            Social s=new Social();
+				s.setVisible(true);  
+        	}  
+    	});
 
 		JButton wedding=new JButton("Wedding Events");
 		wedding.setBounds(700,400,250,30);
 		pnl.add(wedding);
-		wedding.addActionListener(this);
-
+		wedding.addActionListener(new ActionListener(){  
+			public void actionPerformed(ActionEvent e){  
+				pnl.setVisible(false);
+	            Wedding w=new Wedding();
+				w.setVisible(true);  
+        	}  
+    	});
 
 		//----------- Footer -------------
 		 
@@ -118,7 +147,7 @@ public class Home extends JFrame implements ActionListener{
 			corporate.setText("Clicked");
 		}*/
 
-		if(e.getSource()==corporate){
+		/*if(e.getSource()==corporate){
 			pnl.setVisible(false);
 			Corporate c=new Corporate();
 			c.setVisible(true);
@@ -126,7 +155,7 @@ public class Home extends JFrame implements ActionListener{
 		if(e.getSource()==wedding){
 			Wedding w=new Wedding();
 			this.dispose();
-		}
+		}*/
 		/*if(e.getSource()==birthday){
 			Birthday b=new Birthday();
 			this.dispose();
