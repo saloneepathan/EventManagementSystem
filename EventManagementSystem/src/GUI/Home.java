@@ -1,8 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.Image;
 
-public class Home extends JFrame{
+public class Home extends JFrame implements ActionListener{
 
 	JPanel pnl,events;
 	JLabel lbl,lbl2,lbl3,lbl4;
@@ -21,7 +22,7 @@ public class Home extends JFrame{
 		add(pnl);
 		pnl.setLayout(null);
 
-		lbl=new JLabel("Affairs to Remember");
+		lbl=new JLabel("Make Merry Events");
 		lbl2=new JLabel("<html><p><br>We don't just say, we make it happen!!</p></html>");
 		lbl3=new JLabel("..........................................");
 
@@ -33,19 +34,18 @@ public class Home extends JFrame{
 		lbl2.setFont(f2);
 		lbl3.setFont(f3);
 
-		pnl.add(lbl);
-		pnl.add(lbl2);
-		pnl.add(lbl3);
-
 		lbl.setForeground(new Color(178,34,34));
 		pnl.setBackground(new Color(255,204,204));
 		lbl2.setForeground(new Color(205,92,92));
 		lbl3.setForeground(new Color(178,34,34));
 
-		lbl.setBounds(350,20,900,70);
+		lbl.setBounds(370,30,900,70);
 		lbl2.setBounds(700,40,900,60);
 		lbl3.setBounds(480,100,1000,50);
 
+		pnl.add(lbl);
+		pnl.add(lbl2);
+		pnl.add(lbl3);		
 
 		//-------- body ---------
 		lbl4=new JLabel("EVENTS");
@@ -54,6 +54,11 @@ public class Home extends JFrame{
 		lbl4.setForeground(Color.black);
 		lbl4.setBounds(630,0,200,400);
 		pnl.add(lbl4);
+
+		ImageIcon corp=new ImageIcon("E:/jdk1.8.0_271/bin/corporate1.jpg");
+		//pnl.add(corp);
+		JLabel lbl5=new JLabel(corp);
+		pnl.add(lbl5);
 		//ImageIcon corp=new ImageIcon("C:\\Users\\Home\\Desktop\\images\\corporate1.png");
 		//ImageIcon weds=new ImageIcon("C:\\Users\\Home\\Desktop\\images\\wedding1.jpg");
 		//ImageIcon kid=new ImageIcon("C:\\Users\\Home\\Desktop\\images\\birthday1.jpg");
@@ -73,6 +78,70 @@ public class Home extends JFrame{
 		//pnl.add(social);
 		//pnl.add(birthday);
 		//validate();
+		//JLabel corpl=new JLabel("Corporate");
+		//corpl.setBounds(200,100,300,200);
+		//pnl.add(corpl);
+
+		JButton corporate=new JButton("Corporate Events");
+		corporate.setBounds(200,300,200,30);
+		pnl.add(corporate);
+		corporate.addActionListener(this);
 		
+		JButton birthday=new JButton("Birthday Events");
+		birthday.setBounds(500,300,250,30);
+		pnl.add(birthday);
+		birthday.addActionListener(this);
+
+		JButton kids=new JButton("Kids Events");
+		kids.setBounds(800,300,250,30);
+		pnl.add(kids);
+		kids.addActionListener(this);
+
+		JButton social=new JButton("Social Events");
+		social.setBounds(300,400,250,30);
+		pnl.add(social);
+		social.addActionListener(this);
+
+		JButton wedding=new JButton("Wedding Events");
+		wedding.setBounds(700,400,250,30);
+		pnl.add(wedding);
+		wedding.addActionListener(this);
+
+
+		//----------- Footer -------------
+		 
+	}
+
+	public void actionPerformed(ActionEvent e){
+
+		/*if(e.getSource()==corporate){
+			corporate.setText("Clicked");
+		}*/
+
+		if(e.getSource()==corporate){
+			pnl.setVisible(false);
+			Corporate c=new Corporate();
+			c.setVisible(true);
+		}
+		if(e.getSource()==wedding){
+			Wedding w=new Wedding();
+			this.dispose();
+		}
+		/*if(e.getSource()==birthday){
+			Birthday b=new Birthday();
+			this.dispose();
+		}
+		if(e.getSource()==kids){
+			Kids k=new Kids();
+			this.dispose();
+		}
+		if(e.getSource()==corporate){
+			Social s=new Social();
+			this.dispose();
+		}*/
+	}
+
+	public static void main(String[] args){
+		Home h=new Home();
 	}
 }
