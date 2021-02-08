@@ -97,10 +97,10 @@ public class Home extends JFrame implements ActionListener{
 		birthday.setBounds(500,300,250,30);
 		pnl.add(birthday);
 		birthday.addActionListener(new ActionListener(){  
-			public void actionPerformed(ActionEvent e){  
-				pnl.setVisible(false);
-	            Birthday b=new Birthday();
-				b.setVisible(true);  
+			public void actionPerformed(ActionEvent f){ 
+					pnl.setVisible(false);
+		            Birthday b=new Birthday();
+					b.setVisible(true);  
         	}  
     	});
 
@@ -108,7 +108,7 @@ public class Home extends JFrame implements ActionListener{
 		kids.setBounds(800,300,250,30);
 		pnl.add(kids);
 		kids.addActionListener(new ActionListener(){  
-			public void actionPerformed(ActionEvent e){  
+			public void actionPerformed(ActionEvent g){  
 				pnl.setVisible(false);
 	            Kids k=new Kids();
 				k.setVisible(true);  
@@ -119,7 +119,7 @@ public class Home extends JFrame implements ActionListener{
 		social.setBounds(300,400,250,30);
 		pnl.add(social);
 		social.addActionListener(new ActionListener(){  
-			public void actionPerformed(ActionEvent e){  
+			public void actionPerformed(ActionEvent g){  
 				pnl.setVisible(false);
 	            Social s=new Social();
 				s.setVisible(true);  
@@ -130,7 +130,7 @@ public class Home extends JFrame implements ActionListener{
 		wedding.setBounds(700,400,250,30);
 		pnl.add(wedding);
 		wedding.addActionListener(new ActionListener(){  
-			public void actionPerformed(ActionEvent e){  
+			public void actionPerformed(ActionEvent h){  
 				pnl.setVisible(false);
 	            Wedding w=new Wedding();
 				w.setVisible(true);  
