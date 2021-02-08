@@ -57,6 +57,17 @@ public class Corporate extends JFrame{
 		corpl.setBounds(200,100,300,200);
 		pnl.add(corpl);
 
+		JButton home=new JButton("Back to Home");
+		home.setBounds(700,400,250,30);
+		pnl.add(home);
+		home.addActionListener(new ActionListener(){  
+			public void actionPerformed(ActionEvent e){  
+				pnl.setVisible(false);
+	            Home h=new Home();
+				h.setVisible(true);  
+        	}  
+    	});
+
 	}
 
 	public static void main(String args[]){
